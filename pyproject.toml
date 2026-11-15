@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aka3"
+version = "0.1.0"
+description = "Manage permanent Bash and Zsh aliases, functions, and project shortcuts"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{name = "Bryan Lim", email = "ytbryan@gmail.com"}]
+dependencies = ["PyYAML>=6.0,<7"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Operating System :: POSIX",
+  "Programming Language :: Python :: 3",
+]
+
+[project.urls]
+Homepage = "https://github.com/ytbryan/aka.py"
+"Ruby original" = "https://github.com/ytbryan/aka"
+
+[project.scripts]
+aka = "aka3.cli:main"
+aka3 = "aka3.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,6 +1,6 @@
-# aka3
+# aka.py / aka3
 
-A Python port of [Bryan Lim's aka / aka2 RubyGem](https://github.com/ytbryan/aka).
+An alias manager for your terminal. A Python port of [Bryan Lim's aka / aka2 RubyGem](https://github.com/ytbryan/aka).
 Manage permanent Bash and Zsh aliases, functions, groups, and project shortcuts.
 Python 3.9+ on macOS or Linux, with Bash or Zsh installed. Runtime dependency: PyYAML.
 

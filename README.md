@@ -7,20 +7,21 @@ Python 3.9+ on macOS or Linux, with Bash or Zsh installed. Runtime dependency: P
 ## Install
 
 The GitHub repository is `ytbryan/aka.py`; the Python distribution and import name
-are `aka3`. The package has not been published to PyPI, so install from GitHub
-or from this checkout. Use Python 3.9+ on macOS or Linux with Bash or Zsh installed.
+are `aka3`. Use Python 3.9+ on macOS or Linux with Bash or Zsh installed.
 
-Install from GitHub in an isolated environment:
+Install from PyPI in an isolated environment:
 
 ```sh
 python3 -m venv ~/.venvs/aka3
 source ~/.venvs/aka3/bin/activate
-python -m pip install 'git+https://github.com/ytbryan/aka.py.git'
+python -m pip install aka3
 aka --version
 aka setup
 ```
 
-Git must be installed for this installation method. For development, clone first:
+To install the current GitHub source instead, use
+`python -m pip install 'git+https://github.com/ytbryan/aka.py.git'` in the activated
+environment. Git must be installed for that method. For development, clone first:
 
 ```sh
 git clone https://github.com/ytbryan/aka.py.git
@@ -130,9 +131,9 @@ quoted alias normalizes it to a literal single-quoted definition; expansion timi
 can therefore change. `clean` refuses heredocs and preserves multiline quoted data.
 Back up complex startup files before migration.
 
-See [the command parity and audit report](docs/COMMAND_AUDIT.md) for all commands,
+See [the command parity and audit report](https://github.com/ytbryan/aka.py/blob/main/docs/COMMAND_AUDIT.md) for all commands,
 upstream findings, and intentional compatibility changes.
-See [the fix report](docs/FIX_REPORT.md) for exact Python fix lines, test locations,
+See [the fix report](https://github.com/ytbryan/aka.py/blob/main/docs/FIX_REPORT.md) for exact Python fix lines, test locations,
 and remaining work.
 
 ## Development and release

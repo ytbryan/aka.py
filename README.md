@@ -1,3 +1,7 @@
+
+<img width="255" height="255" alt="Emoji-Style Portrait with Moustache" src="https://github.com/user-attachments/assets/8c60e7c9-3146-4391-ad3e-a0f9801297a2" />
+
+
 # aka.py / aka3
 
 An alias manager for your terminal. A Python port of [Bryan Lim's aka / aka2 RubyGem](https://github.com/ytbryan/aka).
